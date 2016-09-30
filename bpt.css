@@ -1,0 +1,161 @@
+body{
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "Amatica SC";
+	position: relative;
+}
+
+#index{ background-image: url(mountain.jpg); }
+#about{ background-image: url(surfer_beach_hut.jpg); }
+#contact{background-image: url(tent.jpg); }
+
+header{
+	text-align: center;
+	color: white;
+}
+
+h1{
+	margin-top: 200px;
+	font-size: 125px;
+	text-align: center;
+	color: white;
+}
+
+h2{
+	font-size: 75px;
+}
+
+a{  
+	text-decoration: none;
+	color:black;
+}
+
+a:hover { color: skyblue; }
+
+a:visited {
+	background-color: white;
+}
+
+nav{
+	background-color: white;
+	margin:25px;
+	padding: 10px;
+	text-align: right;
+}
+
+
+.indexList{
+	position: relative;
+	background-color: white;
+	text-align: center;
+	margin: 25px;
+	padding: 10px;
+	list-style: none;
+	display: inline;	
+}
+
+ul li {
+	background-color: white;
+	width:100%;
+	margin: 10px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+	list-style: none;
+	display: inline;
+}
+
+/* This is About Us*/
+
+#articleAbout{
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 150px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 75px;
+	padding-top: 50px;
+}
+
+#steph{
+	font-family: "HanziPen SC";
+	text-align: left;
+	font-size: 20px;
+	padding-top: 75px;
+}
+
+.img-circle{
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-position: 50% 50%;
+	object-fit: cover;
+}
+
+/* This is the contacts area */
+
+form{
+	font-size: 20px;
+	color:white;
+}
+
+#forms{
+	margin: 50px;
+	text-align: center;
+	border: 1px solid white;
+	padding: 30px;
+}
+
+input[type="text"]{
+	border:none;
+	font-size: 20px;
+	width: 400px;
+	height: 25px;
+	font-family:"HanziPen SC";
+	background-color: rgba(255,255,255, 0.7);
+
+}
+
+input[type="email"]{
+	border:none;	
+	font-size: 20px;
+	width: 400px;
+	height: 25px;
+	font-family:"HanziPen SC";
+	background-color: rgba(255,255,255, 0.7);
+}
+
+input[type="submit"]{
+	border:none;
+	font-size: 20px;
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	border-style: none;
+	background-color: rgba(255,255,255, 0.7);
+	font-family:"Amatica SC";
+}
+
+textarea{
+	background-color: rgba(255,255,255, 0.7);
+	font-size: 20px;
+	height: 200px;
+	width: 700px;
+}
+
+#social{
+	color: white;
+}
+
+.icons{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	margin:10px;
+}
