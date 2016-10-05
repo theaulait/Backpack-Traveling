@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bpt.css">
+	<title>Share</title>
+</head>
+<body id="share">
+	<nav>
+		<ul class="indexList">
+			<li><a href="index.html">Home</a></li>
+			<li><span class="head">Deals</span>
+				<ul>
+					<li class="drop"><a href="https://www.tripadvisor.com/">TripAdivsor</a></li>
+					<li class="drop"><a href="http://www.travelandleisure.com/">Travel and Leisure</a></li>
+					<li class="drop"><a href="http://www.trippy.com/">Trippy</a></li>
+				</ul>
+			</li>
+			<li><a href="bptAbout.html">About Us</a></li>
+			<li><a href="bptBlog.html">Blog</li>
+			<li><a href="bptContact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<header id="sharing">Share Your Moments</header>
+
+	<div id="bigContainer">
+	<div class="fade">
+	<div class="pics">
+	<img class="slide" src="bptAbuDhabi.jpg" width="75%" height="75%">
+	</div>
+	</div>
+	<div class="fade">
+	<div class="pics">
+	<img class="slide" src="bptfalls.jpg" width="75%" height="75%">
+	</div>
+	</div>
+	<div class="fade">
+	<div class="pics">
+	<img class="slide" src="manBridge.jpg" width="75%" height="75%">
+	</div>
+	</div>
+	<div class="fade">
+	<div class="pics">
+	<img class="slide" src="manBoat.jpg" width="75%" height="75%">
+	</div>
+	</div>
+	<div class="fade">
+	<div class="pics">
+	<img class="slide" src="manHat.jpg" width="75%" height="75%">
+	</div></div>
+
+<a class="back" onclick="forward(-1)"> &laquo;</a>
+<a class="forward" onclick="forward(+1)">&raquo;</a>
+</div>
+
+  <script type="text/javascript">
+	var slideIndex = 1;
+	showImage(slideIndex);
+
+	function forward(n) {
+		showImage(slideIndex += n);
+	}
+	function showImage(n){
+		var i;
+		var x = document.getElementsByClassName("fade");
+		if(n > x.length) {
+			slideIndex = 1}
+		if(n < 1) { slideIndex - x.length };
+		for (i= 0; i < x.length; i++){
+			x[i].style.display = "none";
+		}	
+	x[slideIndex-1].style.display = "block";	
+	}
+	
+/*  	
+	----Not using-----
+	function uploadFile() {
+  	var uploading = new XMLHttpRequest();
+  	var fil = document.getElementById('upload').getFormData();
+
+  	uploading.upload.addEventListener("progress", uploadProgress, false);
+  	uploading.addEventListener("load", uploadComplete, false);
+  	uploading.addEventListener("error", uploadFailed, false);
+  	uploading.addEventListener("abort", uploadCanceled, false);
+  	uploading.open("POST", "UploadMinimal.aspx");
+  	uploading.send(fil);
+	}
+
+*/	
+</script>
+
+<form id="upload" enctype="multipart/form-data" method="post" action="Upload.aspx">
+    <div class="upload1">
+    	<label class="customUpload">Select a File to Upload
+    		<input type="file" name="fileToUpload" class="filestyle"/>
+    	</label>
+    </div>
+    <div class="upload1">
+      <input id="uploadButton" type="button" onclick="uploadFile()" value="Upload"/>
+    </div>
+    <div id="progressNumber"></div>
+  </form>
+
+</body>
+</html>

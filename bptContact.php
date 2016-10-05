@@ -9,7 +9,7 @@ $subject = "New Message from Backpack Traveling";
 
 mail ($to, $subject, $comments, "From: " . $first_name . $last_name);
 echo "Your message has been received.";
-header('Location: bptContact.html');
+header('Location: bptContact2.html');
 exit;
 
 ?>
